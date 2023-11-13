@@ -16,15 +16,13 @@ document.body.appendChild(container);
 
 3- Attraverso un ciclo while, prendo ogni elemento della lista e li inserisco in un li. Il programma svolge questa operazione fino a che gli item nell'array non sono finiti, quindi fino a che il numero di li è uguale alla lunghezza dell'array. Creo anche un ul che appendo al div.
 
-const listaUl = document.createElement("ul");
-document.container.appendChild(listaUl);
-
 let i = 0;
 
-while (listaSpesa.length - i !== 0) {
+while (i < listaSpesa.length) {
     const item = document.createElement("li");
-    document.listaUl.appendChild(item);
-    document.item.innerText = listaSpesa[i];
-    i++
+    listaUl.appendChild(item);
+    item.innerText = listaSpesa[i];
+    i++;
 }
+
 
